@@ -206,6 +206,7 @@ ul {
 .services h3 {
     color: var(--white);
     margin: 10px 0px;
+    text-align: center;
 }
 .services .box-container .box{
     padding: 2rem 2rem;
