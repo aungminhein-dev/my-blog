@@ -12,7 +12,7 @@
     margin: 0px 5px;
 }
 body {
-    height: 10000px;
+ 
 }
 .text-white {
     color: white !important;
@@ -193,7 +193,7 @@ ul {
 
 .services .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
     gap: 1.5rem;
     padding: 20px;
 }
@@ -246,7 +246,7 @@ ul {
 }
 .footer .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
     gap: 3rem;
     margin-left: 80px;
 }
