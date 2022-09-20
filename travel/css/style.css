@@ -7,6 +7,7 @@
     text-decoration: none;
     list-style: none;
     font-family: var(--main-fonts);
+    scroll-behavior: smooth;
 }
 .mx {
     margin: 0px 5px;
