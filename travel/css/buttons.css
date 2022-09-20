@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--main-fonts);
+}
+:root {
+    --dark: #2C3333;
+    --white: #F9F9F9;
+    --deepblue: #002B5B;
+    --gold: #EAE509;
+    --fullwidth: 100%;
+    --main-fonts: 'Poppins', sans-serif;
+    --shadow :0px 0px 10px rgba(0,0,0,0.6);
+    --btn-bg: #355764;
+    --border: 2px solid black;
+    --light-white: rgb(133, 128, 128);
+    --slight-vio: #a10ca1;
+    --icon-hover: #8FE3CF;
+    --bg-light: #F9F9F9;
+    --light-green: #23e629;
+  }
+  /*---------------------------------------Main Button----------------------------------------------- */
+.btn-main {
+    text-align: center;
+    padding: 12px 25px;
+    display: block;
+    /* width: 100px; */
+    color: var(--white);
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.5s;
+    color:blue;
+    border-top: 2px solid red;
+    border-left:2px solid blue;
+    border-bottom: 2px solid red;
+    border-right: 2px solid blue;
+    font-weight: 700;
+}
+.btn-main::after{
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 1.2rem;
+    width: 15px;
+    height: 8px;
+    background-color: var(--white);
+    transition: 0.5s;
+    border-radius: 25%;
+    border: 2px solid red;
+}
+.btn-main::before{
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    right: 1.2rem;
+    width: 15px;
+    height: 8px;
+    background-color: var(--white);
+    transition: 0.5s;
+    border-radius: 25%;
+    border: 2px solid blue;
+    
+}
+.btn-main:hover {
+    transform: scale(1.05);
+}
+.btn-main:hover::after{
+    transform: translateX(-15px);
+    /* background:linear-gradient(90deg,red,blue); */
+}
+.btn-main:hover::before{
+    transform: translateX(15px);
+    /* background:linear-gradient(90deg,red,blue); */
+}
+/*--------------------------------------------------main-button end--------------------------------------------------*/
+
+/* second button */
+.btn-second{
+    /* background-color: var(--dark);s */
+    width: 200px;
+    padding: 15px 25px;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(45deg, red,blue);
+    transition: 0.5s ease-in-out;
+
+
+    /* animation: big 1s ease-in-out infinite; */
+}
+.btn-second:hover{
+    /* box-shadow:5px 3px 10px rgb(133, 128, 128); */
+    /* background-color: #4C0033; */
+    box-shadow: inset 200px 0 0 #EAE509;
+    color: black;
+    /* transform: scale(1.03); */
+}
+
+/* second button end */
+
+/* card button */
+.button{
+    margin-top: 20px;
+    animation: big 1s ease-in-out infinite;
+    margin-top: 15px;
+}
+.card:hover .button{
+    animation: none;
+}
+.card-button{
+    color: white;
+    border-radius:  1px solid #0000;
+    color: white;
+    background: linear-gradient(90deg,red,blue);
+    border-radius: 5px;
+    z-index: 5;
+    padding: 10px;
+    transition: 0.3s;
+}
+.card-button:hover{
+    background:linear-gradient(90deg,blue,red);
+}
+@keyframes big {
+    0%{
+        transform: scale(1);
+     }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* card button end */
+
+/* media quries */
+@media(max-width:760px) {
+    .btn-second{
+        width: 180px;
+        padding: 10px 0;
+    }
+    
+}

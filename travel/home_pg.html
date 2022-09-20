@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Css -->
     <!-- swiper -->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/buttons.css">
 </head>
 <body>
     <!-- Header start -->
@@ -36,12 +38,15 @@
     <section class="home">
         <div class="swiper home-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide slide" style="background:url('./img/cv3.jpg') no-repeat;">
-                    <div class="content">
+                <div class="swiper-slide slide"style="background-image:url('./img/cv2.jpg')">
+                    <div class="slider-content" >
                         <div class="heading">
-                            <h1><span class="gold">MrJ's</span> Travel <span class="red">Agency</span></h1>
+                            <h1><span class="gold">MrJ's</span> <span class="red">Travel Agency</span></h1>
                             <h2>Spend Your Holidays...</h2>
-                            <h3>The World<span class="gold"> most beutiful Places</span> | <span class="gold">Historical Buildings</span></h3>
+                            <h3>The World <span class="gold typing">is narrow</span></h3>
+                            <div class="btn-second">
+                                Launch Now
+                            </div>
                         </div>
                         <div class="marketing">
                             <p>Don't know where to start yet?<a href=""> Check Here</a></p>
@@ -50,12 +55,15 @@
                     </div>
                 </div>
                 <!-- slide2 -->
-                <div class="swiper-slide slide" style="background:url('./img/cv5.jpg') no-repeat;">
-                    <div class="content">
+                <div class="swiper-slide slide" style="background-image:url('./img/cv5.jpg')">
+                    <div class="slider-content">
                         <div class="heading">
                             <h1 class="text-white">Meet The World</h1>
                             <h2>Discover More Places</h2>
-                            <h3>The World<span class="gold"> most beutiful Places</span> | <span class="gold">Historical Buildings</span></h3>
+                            <h3>The World <span class="gold typing">is narrow</span></h3>
+                            <div class="btn-second">
+                                Launch Now
+                            </div>
                         </div>
                         <div class="marketing">
                             <p>Don't know where to start yet?<a href=""> Check Here</a></p>
@@ -64,16 +72,18 @@
                     </div>
                 </div>
                 <!-- slide3 -->
-                <div class="swiper-slide slide" style="background:url('./img/cv1.jpg') no-repeat;">
-                    <div class="content">
+                <div class="swiper-slide slide"style="background-image:url('./img/cv3.jpg')">
+                    <div class="slider-content" >
                         <div class="heading">
                             <h1><span class="gold">MrK's</span> Travel <span class="red">Agency</span></h1>
                             <h2>Spend Your Holidays...</h2>
-                            <h3>The World<span class="gold"> most beutiful Places</span> | <span class="gold">Historical Buildings</span></h3>
+                            <h3>The World <span class="gold">is narrow</span></h3>
+                            <div class="btn-second">
+                                Launch Now
+                            </div>
                         </div>
                         <div class="marketing">
                             <p>Don't know where to start yet?<a href=""> Check Here</a></p>
-                                
                         </div>
                     </div>
                 </div>
@@ -85,41 +95,98 @@
     <!-- Services -->
     <section class="services">
         <h3 class="title">Our Services</h3>
-        <div class="box-container">
-            <div class="box">
-                <h3>Adventures</h3>
-                <img src="icons/mountain.png" alt=""> 
-                <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ratione!</p>
+        <div class="card-container" data-aos="fade-down" data-aos-duration="2000">
+            <div class="card" data-aos="fade-down" data-aos-duration="2000">
+                <div class="icon"><i class="fa-solid fa-ticket"></i></div>
+                <div class="card-content">
+                    <h3 class="card-head">Flight Tickets</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nobis accusantium rerum eos! Accusamus, ab.</p>
+                    <div class="button">
+                        <a href="" class="card-button">Read More</a>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-                <h3>Flight Tickets</h3>
-                <img src="icons/plane-tickets.png" alt="">
-                <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ratione!</p>
+            <div class="card" data-aos="fade-down" data-aos-duration="2000">
+                <div class="icon"><i class="fa-solid fa-image"></i></div>
+                <div class="card-content">
+                    <h3 class="card-head">Albums</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nobis accusantium rerum eos! Accusamus, ab.</p>
+                    <div class="button">
+                        <a href="" class="card-button">Read More</a>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-                <h3>Vacation Hikings</h3>
-                <img src="icons/direction.png" alt="">
-                <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ratione!</p>
+            <div class="card" data-aos="fade-down" data-aos-duration="2000">
+                <div class="icon"><i class="fa-solid fa-camera-retro"></i></div>
+                <div class="card-content">
+                    <h3 class="card-head">Views</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nobis accusantium rerum eos! Accusamus, ab.</p>
+                    <div class="button">
+                        <a href="" class="card-button">Read More</a>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-                <h3>Campings</h3>
-                <img src="icons/tent.png" alt="">
-                <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ratione!</p>
+            <div class="card" data-aos="fade-down" data-aos-duration="2000">
+                <div class="icon"><i class="fa-solid fa-hotel"></i></div>
+                <div class="card-content">
+                    <h3 class="card-head">Hotels</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nobis accusantium rerum eos! Accusamus, ab.</p>
+                    <div class="button">
+                        <a href="" class="card-button">Read More</a>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-                <h3>Hotel Bookings</h3>
-                <img src="icons/hotel.png" alt="">
-                <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ratione!</p>
+            <div class="card" data-aos="fade-down" data-aos-duration="2000">
+                <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
+                <div class="card-content">
+                    <h3 class="card-head">Places</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nobis accusantium rerum eos! Accusamus, ab.</p>
+                    <div class="button">
+                        <a href="" class="card-button">Read More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Hero section ends -->
 
-
-
-
-
+    <!-- Home about Section -->
+    <section class="home-about">
+       <div class="about-us">
+            <div class="image">
+                <img src="./img/cv4.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <h3 class="title">About Us</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum praesentium quae assumenda non sit, corrupti incidunt dolores maxime aliquam, obcaecati inventore iure dicta culpa ratione ipsam numquam enim suscipit!</p>
+                <div class="btn-cont">
+                    <a href="#" class="btn-main">NE<span class="red">WS</span></a>
+                    <a href="#" class="btn-main">REV<span class="red">IEWS</span></a>
+                    <a href="#" class="btn-main">UPD<span class="red">ATES</span></a>
+                </div>
+                <div class="about-icon-group">
+                    <div class="about-icon">
+                        <h2>01</h2>
+                        <i class="fa-brands fa-cc-visa"></i>
+                    </div>
+                    <div class="about-icon">
+                        <h2>02</h2>
+                        <i class="fa-solid fa-person-walking-luggage"></i>
+                    </div>
+                    <div class="about-icon">
+                        <h2>03</h2>
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                </div>
+            </div>
+            
+       </div>
+    </section>
+    <a href="#" class="arrow">
+        <i class="fa-solid fa-arrow-up-long"></i>
+    </a>
+    <!-- Home about section ends -->
 
 <!-- Footer Starts -->
 <section class="footer">
@@ -162,18 +229,21 @@
 
             </div>
         </div>
-    
-        
     </div>
     <div class="footer-para">
-        <p>All copy rights reserves @2022. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, laboriosam!</p>
+        <p>All copy rights reserves @2022. Lorem ipsum dolor sit</p>
     </div>
 </section>
 
 <!-- Footer Ends -->
 
-    
+
 </body>
+<!-- Java Script -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+  AOS.init();
+ </script>
 <script src="js/script.js"></script>
 </html>
